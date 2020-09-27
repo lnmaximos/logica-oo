@@ -32,5 +32,11 @@ public class Main {
 			System.out.println("Não é adulto");
 		}
 	
+		Animal a3 = new Animal("Robert");
+		a3.setEspecie("pato");
+		a3.setIdade(7);
+		
+		System.out.println("Nome do animal " + a3.getNome());
+		
 	}
 }
