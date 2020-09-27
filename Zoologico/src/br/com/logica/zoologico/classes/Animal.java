@@ -9,6 +9,13 @@ public class Animal {
 	private String especie;
 	private int idade;
 	
+	public Animal(String nome, String especie, int idade) {
+		this.nome = nome;
+		this.especie = especie;
+		this.idade = idade;
+	}
+	
+	
 	//metodos acessores
 	// GETTERS E SETTERS
 	public void setNome(String nome) {
@@ -42,7 +49,4 @@ public class Animal {
 	public boolean isAdulto() {
 		return idade >= 1;
 	}
-	
-	
-	
 }
