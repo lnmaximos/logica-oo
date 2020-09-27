@@ -15,6 +15,7 @@ public class Animal {
 		this.idade = idade;
 	}
 	
+<<<<<<< HEAD
 	//construtor padrao do java
 	// não é recomendado utilizar o construtor padrao
 	public Animal(){}
@@ -25,6 +26,8 @@ public class Animal {
 	public Animal(String nome) {
 		this.nome = nome;
 	}
+=======
+>>>>>>> cd2108154fce8b2e805b92aa0e74f863bcf7dc1e
 	
 	//metodos acessores
 	// GETTERS E SETTERS
