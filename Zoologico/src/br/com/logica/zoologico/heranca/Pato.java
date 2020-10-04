@@ -12,5 +12,10 @@ public class Pato extends Animal {
 		super(nome);
 	}
 	
+	@Override
+	public void emitirSom() {
+		// TODO Auto-generated method stub
+	System.out.println("quac quac");	
+	}
 	
 }

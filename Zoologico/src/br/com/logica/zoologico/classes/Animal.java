@@ -37,6 +37,14 @@ public abstract class Animal {
 		return nome;
 	}
 	
+	public void setCorPelo(String corPelo) {
+		this.corPelo = corPelo;
+	}
+	
+	public String getCorPelo() {
+		return corPelo;
+	}
+	
 	public void setEspecie(String especie) {
 		this.especie = especie;
 	}
@@ -53,9 +61,7 @@ public abstract class Animal {
 		return idade;
 	}
 	
-	public void emitirSom() {
-		System.out.println("Som do animal");
-	}
+	public abstract void emitirSom();
 	
 	public boolean isAdulto() {
 		return idade >= 1;

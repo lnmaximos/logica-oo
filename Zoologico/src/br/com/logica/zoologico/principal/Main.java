@@ -23,8 +23,6 @@ public class Main {
 		//a2.setEspecie("cachorro");
 		//a2.setIdade(6);
 		
-		a2.emitirSom();
-		
 		System.out.println("Ola o nome do meu cachorro é " + a2.getNome());
 		
 		if(a2.isAdulto()) {

@@ -12,5 +12,10 @@ public class Cachorro extends Animal {
 		super(nome);
 	}
 	
+	@Override
+	public void emitirSom() {
+		// TODO Auto-generated method stub
+		System.out.println("auau");
+	}
 	
 }
