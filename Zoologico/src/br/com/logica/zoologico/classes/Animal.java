@@ -36,7 +36,7 @@ public abstract class Animal {
 		return estaVivo;
 	}
 	
-	public void morrer() {
+	public final void morrer() {
 		this.estaVivo = false;
 	}
 	
