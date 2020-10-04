@@ -8,7 +8,7 @@ public abstract class Animal {
 	private String nome;
 	private String especie;
 	private int idade;
-	private boolean estaVivo;
+	protected boolean estaVivo;
 	
 	public Animal(String nome, String especie, int idade) {
 		this.nome = nome;
