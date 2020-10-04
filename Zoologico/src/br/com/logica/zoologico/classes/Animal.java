@@ -7,7 +7,7 @@ public abstract class Animal {
 	// nesse momento as propriedades sao publicas
 	private String nome;
 	private String especie;
-	private int idade;
+	protected int idade;
 	protected boolean estaVivo;
 	
 	public Animal(String nome, String especie, int idade) {
@@ -68,7 +68,7 @@ public abstract class Animal {
 	
 	public boolean isAdulto() {
 			if(estaVivo) {
-				return idade >= 2;
+				return idade >=2;
 			}else {
 				return false;
 			}

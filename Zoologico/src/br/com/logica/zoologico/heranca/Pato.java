@@ -18,4 +18,13 @@ public class Pato extends Animal {
 	System.out.println("quac quac");	
 	}
 	
+	@Override
+	public boolean isAdulto() {
+		if(isEstaVivo()) {
+			return idade > 1;
+		} else {
+			return false;
+		}
+	}
+	
 }
