@@ -4,7 +4,7 @@ import br.com.logica.zoologico.classes.Animal;
 
 public class Cachorro extends Animal {
 
-	public Cachorro(String nome, String especie, int idade, String corPelo) {
+	public Cachorro(String nome, String especie, int idade) {
 		super(nome, especie, idade);
 	}
 

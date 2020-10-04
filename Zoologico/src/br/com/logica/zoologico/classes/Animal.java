@@ -8,12 +8,13 @@ public abstract class Animal {
 	private String nome;
 	private String especie;
 	private int idade;
-	private String corPelo;
+	private boolean estaVivo;
 	
 	public Animal(String nome, String especie, int idade) {
 		this.nome = nome;
 		this.especie = especie;
 		this.idade = idade;
+		this.estaVivo = true;
 	}
 	
 	//construtor padrao do java
@@ -25,24 +26,26 @@ public abstract class Animal {
 	// mantendo o nome dele, mas trocando a assinatura, quantidade de parametros que ele recebe
 	public Animal(String nome) {
 		this.nome = nome;
+		this.estaVivo = true;
 	}
 	
 	//metodos acessores
 	// GETTERS E SETTERS
+	
+	public boolean isEstaVivo() {
+		return estaVivo;
+	}
+	
+	public void morrer() {
+		this.estaVivo = false;
+	}
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	
 	public String getNome() {
 		return nome;
-	}
-	
-	public void setCorPelo(String corPelo) {
-		this.corPelo = corPelo;
-	}
-	
-	public String getCorPelo() {
-		return corPelo;
 	}
 	
 	public void setEspecie(String especie) {
@@ -64,6 +67,10 @@ public abstract class Animal {
 	public abstract void emitirSom();
 	
 	public boolean isAdulto() {
-		return idade >= 1;
-	}
+			if(estaVivo) {
+				return idade >= 2;
+			}else {
+				return false;
+			}
+	}	
 }
