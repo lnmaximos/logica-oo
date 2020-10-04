@@ -8,6 +8,7 @@ public abstract class Animal {
 	private String nome;
 	private String especie;
 	private int idade;
+	private String corPelo;
 	
 	public Animal(String nome, String especie, int idade) {
 		this.nome = nome;

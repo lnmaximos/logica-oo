@@ -1,12 +1,13 @@
 package br.com.logica.zoologico.principal;
 
-import br.com.logica.zoologico.classes.Animal;
+import br.com.logica.zoologico.heranca.Cachorro;
+import br.com.logica.zoologico.heranca.Pato;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// Criando uma nova instancia do objeto
-		Animal a1 = new Animal("Jojo Todinho", "Gato", 1);
+		Cachorro a1 = new Cachorro("Jojo Todinho", "Gato", 1, "Branco");
 		
 		// atribuindo os valores as propriedades
 		//a1.setNome("jojo todinho");
@@ -15,7 +16,7 @@ public class Main {
 		
 		System.out.println("Nome do animal " + a1.getNome());
 		// criando uma nova instancia do objeto
-		Animal a2 = new Animal("Spike", "Cachorro", 3);
+		Cachorro a2 = new Cachorro("Spike", "Cachorro", 3, "Preto");
 		
 		// atribuindo os valores as propriedades
 		//a2.setNome("spike");
@@ -32,11 +33,11 @@ public class Main {
 			System.out.println("Não é adulto");
 		}
 	
-		Animal a3 = new Animal("Robert");
+		Pato a3 = new Pato("Robert");
 		a3.setEspecie("pato");
 		a3.setIdade(7);
 		
-		System.out.println("Nome do animal " + a3.getNome());
+		System.out.println("Nome do animal " + a3.getNome() + ", é um " + a3.getEspecie() + " e tem " + a3.getIdade() + " anos");
 		
 	}
 }
