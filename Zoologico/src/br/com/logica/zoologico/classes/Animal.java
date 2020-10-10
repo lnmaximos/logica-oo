@@ -1,10 +1,7 @@
 package br.com.logica.zoologico.classes;
 
-// construindo o objeto animal
 public abstract class Animal {
 
-	// atributos ou propriedade do objeto
-	// nesse momento as propriedades sao publicas
 	private String nome;
 	private String especie;
 	protected int idade;
@@ -16,9 +13,7 @@ public abstract class Animal {
 		this.idade = idade;
 		this.estaVivo = true;
 	}
-	
-	//construtor padrao do java
-	// não é recomendado utilizar o construtor padrao
+
 	public Animal(){}
 
 	public Animal(String nome) {
