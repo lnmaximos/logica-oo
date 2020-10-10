@@ -7,7 +7,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		// Criando uma nova instancia do objeto
-		Cachorro a1 = new Cachorro("Jojo Todinho", "Cachorro", 1);
+		Cachorro a1 = new Cachorro("Jojo Chocoleite", "Cachorro", 3);
 		
 		// atribuindo os valores as propriedades
 		//a1.setNome("jojo todinho");
