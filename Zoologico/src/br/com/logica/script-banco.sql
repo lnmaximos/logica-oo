@@ -28,3 +28,10 @@ INSERT INTO animal(especie, idade, estavivo)values("T-Rex", 30000000000000, 1);
 
 -- Consultando os registros da tabela
 SELECT especie, idade, estavivo FROM animal;
+
+
+-- buscar todas as colunas da tabela
+SELECT * FROM animal;
+
+-- Adiciona uma nova coluna
+ALTER TABLE animal ADD COLUMN NOME VARCHAR(100);
