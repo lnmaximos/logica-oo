@@ -20,24 +20,10 @@ public abstract class Animal {
 	//construtor padrao do java
 	// não é recomendado utilizar o construtor padrao
 	public Animal(){}
-	
-	// um construtor pode sofrer uma sobrecarga(sobrescrita)
-	// isso consiste em criar varias versoes de um metodo
-	// mantendo o nome dele, mas trocando a assinatura, quantidade de parametros que ele recebe
+
 	public Animal(String nome) {
 		this.nome = nome;
 		this.estaVivo = true;
-	}
-	
-	//metodos acessores
-	// GETTERS E SETTERS
-	
-	public boolean isEstaVivo() {
-		return estaVivo;
-	}
-	
-	public final void morrer() {
-		this.estaVivo = false;
 	}
 	
 	public void setNome(String nome) {
@@ -64,13 +50,7 @@ public abstract class Animal {
 		return idade;
 	}
 	
-	public abstract void emitirSom();
-	
-	public boolean isAdulto() {
-			if(estaVivo) {
-				return idade >=2;
-			}else {
-				return false;
-			}
-	}	
+	public boolean isEstaVivo() {
+		return estaVivo;
+	}
 }
