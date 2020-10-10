@@ -23,20 +23,35 @@ import java.util.Scanner;
 		private int idade;
 		
 		public PessoaDesafio(String nome, int idade) {
-			
+			this.nome = nome;
+			this.idade = idade;
 		}
 
+		public void showInfo() {
+			System.out.println(nome);
+			System.out.println(idade);
+		}
 	}
 	
 	class ProgramadorDesafio extends PessoaDesafio {
 		
 		private String linguagem;
 		
-		public ProgramadorDesafio(String nome. int idade) {
+		public ProgramadorDesafio(String nome, int idade) {
 			super(nome, idade);
 		}
-				
+		
+		public ProgramadorDesafio(String nome, int idade, String linguagem) {
+			super(nome, idade);
+			this.linguagem = linguagem;
+		}
+	
+	@Override
+	public void showInfo() {
+		super.showInfo();
+		System.out.println(linguagem);
 	}
+}
 	
 public class DesafioHerancaConstrutor {
 	
