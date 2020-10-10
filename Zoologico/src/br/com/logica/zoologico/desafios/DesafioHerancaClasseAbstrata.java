@@ -28,5 +28,6 @@ public class DesafioHerancaClasseAbstrata {
 		a.setTitulo(scann.nextLine());
 		
 		System.out.println(a.getTitulo());
+		scann.close();
 	}
 }
