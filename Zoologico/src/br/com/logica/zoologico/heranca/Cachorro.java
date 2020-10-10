@@ -30,4 +30,7 @@ public class Cachorro extends Animal {
 		}
 	}
 	
+	public void morrer() {
+		this.estaVivo = false;
+	}
 }

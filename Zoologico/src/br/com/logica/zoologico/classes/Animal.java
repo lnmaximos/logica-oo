@@ -1,6 +1,7 @@
 package br.com.logica.zoologico.classes;
+import br.com.logica.zoologico.interfaces.IAnimal;
 
-public abstract class Animal {
+public abstract class Animal implements IAnimal {
 
 	private String nome;
 	private String especie;

@@ -29,5 +29,7 @@ public class Pato extends Animal {
 			return false;
 		}
 	}
-	
+	public void morrer() {
+		this.estaVivo = false;
+	}
 }
