@@ -21,3 +21,10 @@ CREATE   ---- INSERT ---- INSERIR
 READ     ---- SELECT ---- CONSULTAR
 UPDATE   ---- UPDATE ---- ALTERAR
 DELETE   ---- DELETE ---- EXCLUIR
+
+-- Inserindo registros
+INSERT INTO animal(especie, idade, estavivo)values("T-Rex", 30000000000000, 1);
+
+
+-- Consultando os registros da tabela
+SELECT especie, idade, estavivo FROM animal;
