@@ -14,8 +14,11 @@ public class Pato extends Animal {
 	
 	@Override
 	public void emitirSom() {
-		// TODO Auto-generated method stub
-	System.out.println("quac quac");	
+		if(estaVivo) {
+			System.out.println("quac quac");
+		}else {
+			System.out.println("pereceu");
+		}
 	}
 	
 	@Override
