@@ -91,3 +91,15 @@ alter table cliente add column cidade varchar(50);
 
 -- mostra a estrutura fisica da tabela --
 describe cliente;
+
+alter table cliente add column estado varchar(50);
+
+alter table cliente drop column estado;
+
+alter table cliente add column estado varchar(50);
+
+alter table cliente modify column estado int;
+
+alter table cliente modify column estado varchar(100);
+-- fim alteração de tabelas --
+
