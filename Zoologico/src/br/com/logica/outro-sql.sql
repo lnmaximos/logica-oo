@@ -82,3 +82,12 @@ qtde int,
 desconto float(10,2),
 primary key (id));
 
+-- excluindo tudo da tabela --
+truncate cliente;
+select * from cliente;
+
+-- inicio alteração de tabelas --
+alter table cliente add column cidade varchar(50);
+
+-- mostra a estrutura fisica da tabela --
+describe cliente;
