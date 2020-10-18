@@ -66,12 +66,14 @@ id int not null auto_increment,
 codigo_venda varchar(10),
 id_cliente int not null,
 id_fornecedor int not null,
-id_vendendor int not null,
+id_vendedor int not null,
 valor float(10,2),
 desconto float(10,2),
 total float(10,2),
 data_venda date,
 primary key (id));
+
+alter table venda add column id_vendedor int not null;
 
 create table item_venda(
 id int not null auto_increment,
@@ -113,3 +115,34 @@ alter table venda add index venda_fornecedor_id (id_fornecedor asc);
 alter table item_venda add index venda_produto_id (id_produto asc);
 -- fim da criação dos index --
 
+-- inicio da criação das constraints de chave estrangeira --
+alter table venda add constraint fk_produto_fornecedor
+foreign key(id_fornecedor)
+references fornecedor(id)
+on delete no action
+on update no action;
+
+alter table venda add constraint fk_venda_cliente
+foreign key(id_cliente)
+references cliente(id)
+on delete no action
+on update no action;
+
+alter table venda add constraint fk_venda_vendedor
+foreign key(id_vendedor)
+references vendedor(id)
+on delete no action
+on update no action;
+
+alter table venda add constraint fk_venda_fornecedor
+foreign key(id_fornecedor )
+references fornecedor(id)
+on delete no action
+on update no action;
+
+alter table item_venda add constraint fk_item_venda_produto
+foreign key(id_produto)
+references produto (id)
+on delete no action
+on update no action;
+-- fim da criação das constraints --
