@@ -269,3 +269,6 @@ select format(avg(p.valor),2) as 'MEDIA PREÇO COM FORMAT', avg(p.valor) as 'MEDI
 
 -- para conar registros - count()
 select count(*) from produto;
+
+-- verificar quantidade - having
+select v.codigo_venda, v.id_vendedor, v.id_cliente, v.valor from venda v having valor > 7000 order by 4 asc;
