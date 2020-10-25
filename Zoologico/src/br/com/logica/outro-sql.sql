@@ -278,3 +278,6 @@ select max(valor) as 'Maior valor venda', min(valor) as 'Menor valor venda' from
 
 -- somar todos os valores de uma coluna - sum()
 select sum(valor) as 'Valor total de produtos' from produto;
+
+-- registros em minusculos e maiusculos - lcase() / lower() / upper()
+select lcase(descricao), upper(descricao) from produto;
