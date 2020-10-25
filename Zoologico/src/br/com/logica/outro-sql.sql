@@ -281,3 +281,6 @@ select sum(valor) as 'Valor total de produtos' from produto;
 
 -- registros em minusculos e maiusculos - lcase() / lower() / upper()
 select lcase(descricao), upper(descricao) from produto;
+
+-- completa uma string a direita com um caractere desejado na quantia desejada
+select rpad(descricao,10,'***') from produto;
