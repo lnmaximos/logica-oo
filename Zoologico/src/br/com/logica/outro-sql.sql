@@ -272,3 +272,6 @@ select count(*) from produto;
 
 -- verificar quantidade - having
 select v.codigo_venda, v.id_vendedor, v.id_cliente, v.valor from venda v having valor > 7000 order by 4 asc;
+
+-- valor maximo e valor minimo - max() / min()
+select max(valor) as 'Maior valor venda', min(valor) as 'Menor valor venda' from venda;
