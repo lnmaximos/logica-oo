@@ -283,4 +283,20 @@ select sum(valor) as 'Valor total de produtos' from produto;
 select lcase(descricao), upper(descricao) from produto;
 
 -- completa uma string a direita com um caractere desejado na quantia desejada
-select rpad(descricao,10,'***') from produto;
+select rpad(descricao,10,'*') from produto;
+
+-- consultas com funções de data tempo
+-- retornar a diferença entre datas - datediff()
+select datediff('2015-03-17','2015-03-15');
+
+-- converter de string para data - str_to_date()
+select str_to_date('August 10 2013', '%M %d %Y');
+
+-- consulta a data e hora atual - now()
+select now();
+
+-- retorna o dia do mês de uma data
+select dayofmonth(data_venda) from venda;
+
+-- retorna o valor numérico do dia da semana
+select dayofweek(data_venda) from venda;
