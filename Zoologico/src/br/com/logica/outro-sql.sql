@@ -300,3 +300,8 @@ select dayofmonth(data_venda) from venda;
 
 -- retorna o valor numérico do dia da semana
 select dayofweek(data_venda) from venda;
+
+-- buscar entre duas datas
+select * from venda
+where data_venda between '2015-01-01' and '2015-01-03'
+order by data_venda desc;
