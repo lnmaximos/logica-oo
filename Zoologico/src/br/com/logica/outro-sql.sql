@@ -275,3 +275,6 @@ select v.codigo_venda, v.id_vendedor, v.id_cliente, v.valor from venda v having 
 
 -- valor maximo e valor minimo - max() / min()
 select max(valor) as 'Maior valor venda', min(valor) as 'Menor valor venda' from venda;
+
+-- somar todos os valores de uma coluna - sum()
+select sum(valor) as 'Valor total de produtos' from produto;
